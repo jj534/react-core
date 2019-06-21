@@ -1,6 +1,6 @@
-export const incrementCount = (amount) => {
+export const updateCount = (amount) => {
     return {
-        type: "INCREMENT_COUNT",
+        type: "UPDATE_COUNT",
         payload: amount
     }
 }

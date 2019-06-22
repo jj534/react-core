@@ -18,5 +18,39 @@ var firebaseConfig = {
     
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
 
 export default firebase;
+
+export const createDocument = (collection, data) => {
+    console.log('attempt create document')
+    db.collection(collection).add(data)
+        .then((docRef) => {
+            console.log(`document created in ${collection}`, docRef);
+            return docRef;
+        })
+        .catch((err) => {
+            console.log(err);
+            return false;
+        })
+}
+
+// returns (on success): querySnapshot
+/*
+querySnapshot.forEach((doc) => {
+        console.log(doc.id);
+        console.log(doc.data());
+    });
+*/
+export const readCollection = (collection) => {
+    console.log('attempt read collection');
+    db.collection(collection).get()
+        .then((querySnapshot) => {
+            console.log(`read collection: ${collection}`)
+            return querySnapshot;
+        })
+        .catch((err) => {
+            console.log(err);
+            return false;
+        })
+}

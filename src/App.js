@@ -1,7 +1,7 @@
 import React from 'react';
 import Store from './redux/store';
 import {Provider} from 'react-redux';
-import Counter from './components/Counter';
+import Home from './components/Home';
 import { PersistGate } from 'redux-persist/integration/react'
 import { persistStore } from 'redux-persist'
 
@@ -12,7 +12,7 @@ class App extends React.Component {
     return (
       <Provider store={Store}>
         <PersistGate loading={null} persistor={persistor}>
-          <Counter />
+          <Home />
         </PersistGate>
       </Provider>
       )

@@ -1,5 +1,5 @@
-# react | redux | firebase | heroku
-4 in 1 starter package
+# react | redux | firebase
+3 in 1 starter package
 built on top of create-react-app
 
 # heroku deployment

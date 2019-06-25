@@ -1,13 +1,12 @@
 # react | redux | firebase Starter Package
 
-
 Additional Integrations:  
 redux-persist  
-redux-promise
-logger
-device detection
-bootstrap
-awesomefont
+redux-promise  
+logger  
+device detection  
+bootstrap  
+awesomefont  
 
 # Before heroku deployment
 update node, npm versions on package.json

@@ -1,9 +1,16 @@
-# react | redux | firebase
-3 in 1 starter package
-built on top of create-react-app
+# react | redux | firebase Starter Package
 
-# heroku deployment
+
+Additional Integrations:
+redux-persist
+redux-promise
+logger
+device detection
+bootstrap
+awesomefont
+
+# Before heroku deployment
 update node, npm versions on package.json
 
-# firebase
+# Before firebase usage
 update firebase app config on firebase.js

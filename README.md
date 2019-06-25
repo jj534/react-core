@@ -1,8 +1,8 @@
 # react | redux | firebase Starter Package
 
 
-Additional Integrations:
-redux-persist
+Additional Integrations:  
+redux-persist  
 redux-promise
 logger
 device detection
